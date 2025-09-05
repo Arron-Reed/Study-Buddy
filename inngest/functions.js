@@ -1,5 +1,7 @@
 import { USER_TABLE } from "@/configs/schema";
 import { inngest } from "./client";
+import { db } from "@/configs/db";
+import { eq } from "drizzle-orm";
 
 export const helloWorld = inngest.createFunction(
   { id: "hello-world" },
